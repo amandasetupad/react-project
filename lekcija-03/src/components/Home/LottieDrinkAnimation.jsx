@@ -16,7 +16,7 @@ function LottieDrinkAnimation(){
             renderer:'svg',
             loop: true,
             autoplay: true,
-            animationData: require('/Users/amandapipare/Desktop/React Project/lekcija-03/src/lotties/drink-animation.json')
+            animationData: require('/Users/amandapipare/Desktop/React Project/react-project/lekcija-03/src/lotties/drink-animation.json')
         })
     }, [])
 

@@ -4,6 +4,7 @@ import HeaderContainer from "../HeaderContainer/HeaderContainer";
 import styled from "styled-components";
 import LottieDrinkAnimation from "./LottieDrinkAnimation";
 import Cards from "./Cards";
+import RecentPosts from "./RecentPosts";
 
 
 
@@ -58,6 +59,7 @@ function Home() {
 
         </StyledHome>
         <Cards/>
+        <RecentPosts/>
              </>   
         
     );

@@ -2,8 +2,9 @@ import NavButton from "./NavButton/NavButton";
 // import NavButton from "../NavButton/NavButton";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from '/Users/amandapipare/Desktop/React Project/lekcija-03/src/files/cocktail-logo.svg';
-
+import logo from '/Users/amandapipare/Desktop/React Project/react-project/lekcija-03/src/files/cocktail-logo.svg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCirclePlus, faHistory, faUser} from "@fortawesome/free-solid-svg-icons";
 
 const NavMenu = styled.nav`
     width: 100%;
@@ -28,6 +29,16 @@ const NavMenu = styled.nav`
         line-height: 1.5;
         -webkit-tap-highlight-color: transparent;
         padding: 12px 16px;
+    }
+
+    .nav-wrapper{
+        display: flex;
+        justify-content: space-between;
+
+        div{
+            padding: 12px 16px;
+            line-height: 1.5;
+        }
     }
 `
 
@@ -63,8 +74,8 @@ const Nav = () => {
             </div>
 
             <div className="nav-wrapper">
-                <button>+</button>
-                <button>User</button>
+                <div><FontAwesomeIcon color='#ffffff' icon={faCirclePlus} size="lg" /></div>
+                <div><FontAwesomeIcon color='#ffffff' icon={faUser} size="lg" /></div>
             </div>
 
         </NavMenu>
