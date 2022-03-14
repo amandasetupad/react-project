@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import logo from '/Users/amandapipare/Desktop/React Project/react-project/lekcija-03/src/files/cocktail-logo.svg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlus, faHistory, faUser} from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlus, faHistory, faPlus, faUser} from "@fortawesome/free-solid-svg-icons";
 
 const NavMenu = styled.nav`
     width: 100%;
@@ -74,7 +74,7 @@ const Nav = () => {
             </div>
 
             <div className="nav-wrapper">
-                <div><FontAwesomeIcon color='#ffffff' icon={faCirclePlus} size="lg" /></div>
+                <div><FontAwesomeIcon color='#ffffff' icon={faPlus} size="lg" /></div>
                 <div><FontAwesomeIcon color='#ffffff' icon={faUser} size="lg" /></div>
             </div>
 
