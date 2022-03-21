@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
-import { useEffect, useReact, useState } from "react";
+import { useEffect, useState } from "react";
+
 import PostsContainer from "./PostsContainer/PostsContainer";
 
 const StyledPosts = styled.div`
