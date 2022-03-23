@@ -15,32 +15,23 @@ const NavMenu = styled.nav`
   align-items: center;
   justify-content: space-between;
   background-color: #398eea;
+`;
 
-  .logo-wrapper {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-weight: 700;
-    min-width: 300px;
-    justify-content: space-between;
-  }
-  a {
-    color: white;
-    font-size: 1rem;
-    line-height: 1.5;
-    -webkit-tap-highlight-color: transparent;
-    padding: 12px 16px;
-  }
+const StyledLogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  min-width: 300px;
+  justify-content: space-between;
+`;
 
-  .nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    div {
-      padding: 12px 16px;
-      line-height: 1.5;
-    }
-  }
+const NavLink = styled(Link)`
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  padding: 12px 16px;
 `;
 
 const Logo = styled.div`
@@ -53,33 +44,43 @@ const Logo = styled.div`
   }
 `;
 
+const StyledNav = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const StyledIcons = styled.div`
+  padding: 12px 16px;
+  line-height: 1.5;
+`;
+
 const Nav = () => {
   return (
     <NavMenu>
-      <div className="logo-wrapper">
-        <Link to="/" style={{ textDecoration: "none" }}>
+      <StyledLogoWrapper>
+        <NavLink to="/" style={{ textDecoration: "none" }}>
           <Logo>
             <img src={logo} />
           </Logo>
-        </Link>
+        </NavLink>
 
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <NavLink to="/" style={{ textDecoration: "none" }}>
           <div title="Home">Home</div>
-        </Link>
+        </NavLink>
 
-        <Link to="/all-recipes" style={{ textDecoration: "none" }}>
+        <NavLink to="/all-recipes" style={{ textDecoration: "none" }}>
           <NavButton title="All recipes" />
-        </Link>
-      </div>
+        </NavLink>
+      </StyledLogoWrapper>
 
-      <div className="nav-wrapper">
-        <div>
+      <StyledNav>
+        <StyledIcons>
           <FontAwesomeIcon color="#ffffff" icon={faPlus} size="lg" />
-        </div>
-        <div>
+        </StyledIcons>
+        <StyledIcons>
           <FontAwesomeIcon color="#ffffff" icon={faUser} size="lg" />
-        </div>
-      </div>
+        </StyledIcons>
+      </StyledNav>
     </NavMenu>
   );
 };
