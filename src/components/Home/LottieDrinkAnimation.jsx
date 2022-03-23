@@ -16,7 +16,7 @@ function LottieDrinkAnimation() {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: require("./public/drink-animation.json"),
+      animationData: require("../../../src/assets/drink-animation.json"),
     });
   }, []);
 

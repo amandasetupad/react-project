@@ -24,6 +24,7 @@ const StyledPosts = styled.div`
     text-align: justify;
     font-size: 16px;
     color: #0c2c00;
+    min-height: 3rem;
   }
 `;
 const RowContainer = styled(StyledPosts)`

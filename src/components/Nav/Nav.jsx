@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import NavButton from "./NavButton/NavButton";
 import React from "react";
-import logo from "./public/cocktail-logo.svg";
+import logo from "../../../src/assets/cocktail-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
 

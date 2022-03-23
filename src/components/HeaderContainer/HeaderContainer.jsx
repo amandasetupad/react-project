@@ -53,7 +53,7 @@ const HeaderContainer = () => {
                 deleteSpeed={50}
                 delaySpeed={1000}
                 words={[
-                  " get fucked up.",
+                  " get f*cked up.",
                   " enjoy yourself.",
                   " be happy.",
                   " surprise someone.",
