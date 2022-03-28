@@ -5,7 +5,7 @@ import styled from "styled-components";
 import HeaderContainer from "../HeaderContainer/HeaderContainer";
 import LottieDrinkAnimation from "./LottieDrinkAnimation";
 import Cards from "./Cards";
-import RecentPosts from "./RecentPosts";
+import RecentPosts from "./RecentPosts/RecentPosts";
 
 const StyledHome = styled.div`
   background-color: #398eea;

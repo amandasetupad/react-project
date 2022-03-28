@@ -1,4 +1,3 @@
-// globalStyles.js
 import { createGlobalStyle } from "styled-components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -7,6 +6,7 @@ import Nav from "./components/Nav/Nav";
 import Home from "./components/Home/Home";
 import AllPosts from "./components/AllPosts/AllPosts";
 import Footer from "./components/Footer/Footer";
+import ErrorPage from "./components/404Page/404Page";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -29,9 +29,9 @@ function App() {
         <BrowserRouter>
           <Nav />
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/all-recipes" element={<AllPosts />} />
-            <Route exact path="*" element={<div>404</div>} />
+            <Route exact path="/" element={<Home/>} />
+            <Route exact path="/all-recipes" element={<AllPosts/>} />
+            <Route exact path="*" element={<ErrorPage/>} />
           </Routes>
         </BrowserRouter>
 
